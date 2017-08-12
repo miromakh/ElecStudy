@@ -1,0 +1,168 @@
+/** Easy Tree style */
+.easy-tree
+{
+	min-height: 20px;
+	/*margin-bottom: 20px;*/
+	/*background-color: #e56155;*/
+	color: #000;
+	border: none;
+	border-top: none;
+	/*padding-bottom: 15px;*/
+	direction: rtl;
+}
+
+	.easy-tree > ul
+	{
+		padding-right: 0;
+	}
+
+	.easy-tree > ul > li:first-child
+	{
+		padding-top:0;
+	}
+
+	.easy-tree li
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 10px 5px 0 0;
+		position: relative
+	}
+
+	.easy-tree li > ul
+	{
+		padding-right:10px;
+	}
+
+		.easy-tree li::before, .easy-tree li::after
+		{
+			content: '';
+			right: -5px;
+			position: absolute;
+			left: auto
+		}
+
+		.easy-tree li::before
+		{
+			border-right: 1px solid #000;
+			bottom: 50px;
+			height: 100%;
+			top: 0;
+			width: 1px
+		}
+
+		.easy-tree li::after
+		{
+			border-top: 1px solid #000;
+			height: 20px;
+			top: 30px;
+			width: 10px;
+			
+		}
+
+		.easy-tree li > span
+		{
+			border: 1px solid #000;
+			border-radius: 3px;
+			display: inline-block;
+			padding: 5px;
+			text-decoration: none;
+			width:100%;
+		}
+
+		.easy-tree li.parent_li > span
+		{
+			cursor: pointer
+		}
+
+
+	.easy-tree > ul > li::before, .easy-tree > ul > li::after
+	{
+		border: 0
+	}
+
+	.easy-tree li:last-child::before
+	{
+		height: 30px
+	}
+
+	.easy-tree li.parent_li > span:hover, .easy-tree li.parent_li > span:hover + ul li span
+	{
+		background: #fafafa;
+		color: #606060;
+		cursor: pointer;
+	}
+
+		.easy-tree li.parent_li > span:hover + ul li.li_selected span
+		{
+			background: #fafafa;
+			color: #606060;
+			cursor: pointer;
+		}
+
+	.easy-tree li > span > a
+	{
+		color: #000;
+		text-decoration: none;
+		cursor:pointer;
+		padding-right:5px;
+	}
+
+	.easy-tree li > span > span.glyphicon-folder-close, .easy-tree li > span > span.glyphicon-folder-open
+	{
+		margin-left: 5px;
+	}
+
+	.easy-tree li.li_selected > span, .easy-tree li.li_selected > span > a
+	{
+		background: #e5e2e1;
+		color: #0094ff;
+		cursor:pointer;
+	}
+
+		.easy-tree li.li_selected > span:hover, .easy-tree li.li_selected > span:hover > a
+		{
+			background: #fafafa;
+			color: #606060;
+			cursor: pointer;
+		}
+
+	/*.easy-tree .easy-tree-toolbar
+	{
+		/*background-color: #000;/
+	}*/
+
+		.easy-tree .easy-tree-toolbar div.row > div
+		{
+			padding-right:5px !important;
+			padding-bottom:5px !important;
+		}
+
+/*			.easy-tree .easy-tree-toolbar > div button
+			{
+				border-radius: 0;
+				margin: 20px 5px;
+			}
+
+			.easy-tree .easy-tree-toolbar > div input
+			{
+				float:left;
+			}
+
+		.easy-tree .easy-tree-toolbar .input-group
+		{
+			top: -15px;
+			margin-right: 5px;
+			margin-left: 5px;
+		}
+
+			.easy-tree .easy-tree-toolbar .input-group input
+			{
+				border-radius: 0;
+				float:left;
+			}
+
+			.easy-tree .easy-tree-toolbar .input-group button
+			{
+				border-radius: 0;
+			}*/

@@ -1,0 +1,117 @@
+﻿body {
+	direction:rtl;
+}
+
+.btn-login
+{
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+
+.padding0_2em
+{
+	padding: .2em .2em .2em .2em;
+}
+
+.shadow
+{
+	background-color:#000;
+	opacity:0.5;
+}
+
+.height40px
+{
+	height:40px;
+}
+
+.pointer
+{
+	cursor: pointer;
+}
+
+.cursor-default
+{
+	cursor:default;
+}
+
+.font08em{
+	font-size:.8em;
+}
+
+.rtl .globalTitle
+{
+	padding: 3px 8px;
+	color: #fff;
+	text-align: center;
+	background-color: #000;
+	border-radius: 4px;
+	direction:rtl;
+}
+
+.ac_results
+{
+	background-color: #fff;
+	border: 1px solid #000;
+	border-top-left-radius:5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.ac_results ul
+{
+	list-style-type:none;
+	padding:5px;
+}
+
+	.ac_results ul li
+	{
+		margin-top:5px;
+		margin-top:5px;
+	}
+
+	.ac_results ul li:hover
+	{
+		background-color:rgb(238, 229, 185);
+		cursor:pointer;
+	}
+
+.overflow-hidden
+{
+	overflow:hidden;
+}
+
+.uiPopup
+{
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 6px;
+	outline: 0;
+}
+
+	.uiPopup .title
+	{
+		padding: 15px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	.uiPopup .content
+	{
+		padding: 15px;
+	}
+
+	.uiPopup .buttons
+	{
+		padding: 15px;
+		text-align: right;
+		border-top: 1px solid #e5e5e5;
+		height:60px;
+	}
